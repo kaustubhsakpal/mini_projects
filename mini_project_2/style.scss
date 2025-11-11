@@ -1,0 +1,152 @@
+// VARIABLES
+$primary: #2563eb;
+$gray: #64748b;
+$bg: #f8fafc;
+$radius: 12px;
+$shadow: 0 8px 20px rgba(2,6,23,0.08);
+
+// GLOBAL
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: $bg;
+  color: #0f172a;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+// FORM
+.card-form {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  width: min(900px, 95%);
+  justify-content: space-between;
+
+  h2 {
+    width: 100%;
+    margin-bottom: 10px;
+    color: $primary;
+  }
+
+  .form-group {
+    flex: 1 1 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    label {
+      font-size: 13px;
+      color: $gray;
+    }
+
+    input, select {
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+      outline: none;
+
+      &:focus {
+        border-color: $primary;
+      }
+    }
+  }
+
+  .btn {
+    margin-top: 10px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: $primary;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      background: darken($primary, 10%);
+    }
+  }
+}
+
+// CARDS
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: min(900px, 95%);
+}
+
+.card {
+  background: white;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  width: 280px;
+  gap: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+  }
+
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .info {
+    h3 {
+      margin: 0;
+      font-size: 16px;
+      color: #111827;
+    }
+
+    p {
+      margin: 2px 0;
+      font-size: 13px;
+      color: $gray;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 12px;
+      color: white;
+      margin-top: 4px;
+
+      &.important { background: #059669; }
+      &.urgent { background: #f97316; }
+      &.emergency { background: #dc2626; }
+      &.norush { background: #6b7280; }
+    }
+  }
+}
+
+// RESPONSIVE
+@media (max-width: 768px) {
+  .card-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .card {
+    width: 100%;
+  }
+}

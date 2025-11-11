@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <form>
+      <h3>Enter Your details here...</h3>
+      <div class="allinput">
+        <p>Profile Url</p>
+        <input type="text" placeholder="Profile pic" required />
+        <p>full name</p>
+        <input type="text" placeholder="Enter full name"  required/>
+        <p>Home Town</p>
+        <input type="text" placeholder="Home town"  required/>
+        <p>purpose</p>
+        <input type="text" placeholder="purpose" required />
+      </div>
+      <div class="priority-form">
+        <label class="priority-option">
+          <input type="radio" name="priority" value="emergency"   />
+          Emergency
+        </label>
+
+        <label class="priority-option">
+          <input type="radio" name="priority" value="urgent"  />
+          Urgent
+        </label>
+
+        <label class="priority-option">
+          <input type="radio" name="priority" value="important"   />
+          Important
+        </label>
+
+        <label class="priority-option">
+          <input type="radio" name="priority" value="norush"  />
+          No Rush
+        </label>
+      </div>
+      <div class="buttons">
+        <input type="submit" placeholder="Create Note">
+        <button class="close">Close</button>
+      </div>
+    </form>
+
+    <section>
+      <div class="icon">
+        <i class="fa-solid fa-plus" id="plus"></i>
+        <i class="fa-solid fa-arrow-up" id="upbtn"></i>
+        <i class="fa-solid fa-arrow-down" id="downbtn"></i>
+      </div>
+      <div class="card">
+      
+      </div>
+      
+
+      <div class="spans">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

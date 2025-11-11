@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 55vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+}
+
+section {
+  width: 300px;
+  height: 150px;
+  border: 1px solid rgb(123, 122, 122);
+  border-radius: 1rem;
+  h3 {
+    padding: 2rem 3rem;
+    color: white;
+    text-align: center;
+  }
+  .progress-container {
+    height: 10px;
+    width: 90%;
+    background-color: #e0e0e0;
+    border-radius: 2rem;
+    margin: 0 1rem;
+    .progress-bar {
+      width: 100%;
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, #4caf50, #81c784);
+      transition: width 0.4s ease;
+      border-radius: 1rem;
+    }
+    p{
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+    }
+  }
+}
