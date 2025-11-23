@@ -1,4 +1,3 @@
-// IPL teams data (2025-season snapshot)
 const iplTeams = [
   {
     id: "MI",
@@ -135,6 +134,7 @@ const iplTeams = [
 const btn=document.querySelector("button");
 const main=document.querySelector("main");
 const box=document.querySelector("#box");
+const iamh2=document.querySelector(".iamh2");
 
 
 btn.addEventListener("click",()=>{
@@ -148,6 +148,12 @@ btn.addEventListener("click",()=>{
       <p><strong>Trophy Years:</strong> ${random.trophyYears}</p>
       <p><strong>Primary Color:</strong> ${random.primaryColor}</p>
       <p><strong>Secondary Color:</strong> ${random.secondaryColor}</p>
+      <p><strong>homeGround :</strong> ${random.homeGround}</p>
+      <p><strong>founded :</strong> ${random.founded}</p>
+      <p><strong>owner :</strong> ${random.owner}</p>
+      <p><strong>notes :</strong> ${random.notes}</p>
     </div>`
-
+    document.querySelector("h1").textContent=`IPL Team :${random.name}`
+    btn.style.backgroundColor=random.secondaryColor;
+   iamh2.style.color=random.secondaryColor;
 })

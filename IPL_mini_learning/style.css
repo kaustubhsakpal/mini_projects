@@ -22,7 +22,7 @@ h1 {
 main {
   height: 100%;
   width: 100%;
-  background-color: rgb(51, 84, 112);
+  background-color: #FFC72C;
    display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@ main {
   flex-direction: column;
 }
 #box {
-  background-color: bisque;
+  background-color: #0057A7;
   font-size: 15px;
   height: 400px;
   width: 500px;
@@ -54,12 +54,17 @@ button:active{
 }
 
 .team-card{
-    padding-top: 30px;
-    font-size: 22px;
+    padding-top: 10px;
+    font-size: 18px;
     display: flex;
     justify-content: space-around;
     align-items: start;
     color: white;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+
+}
+
+#box2{
+  
 }
