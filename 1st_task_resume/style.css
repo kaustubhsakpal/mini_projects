@@ -1,0 +1,103 @@
+@font-face {
+  font-family: danger;
+  /* src: url(RUSTY\ ATTACK\ DEMO\ Regular.otf); */
+  src: url(amazon.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+    font-family: "danger";
+}
+
+nav{
+  height: 200px;
+  background-color: #273d50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer{
+     height: 60px;
+  background-color: #273d50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+h1 {
+  font-style: italic;
+  font-size: 50px;
+}
+
+.box1 {
+  text-align: center;
+}
+
+.heading {
+  font-size: 20px;
+   text-transform: uppercase;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box2 {
+  text-align: center;
+  height: 250px;
+  width: 80%;
+  background-color: rgb(218, 250, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box3 {
+  text-align: center;
+  height: 400px;
+  width: 80%;
+  background-color: rgb(254, 255, 198);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}.box4 {
+  text-align: center;
+  height: 350px;
+  width: 80%;
+  background-color: rgb(247, 198, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}.box5 {
+  text-align: center;
+  height: 250px;
+  width: 80%;
+  background-color: rgb(224, 255, 212);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box2-1 {
+  background-color: azure;
+  height: 50px;
+  width: 80%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
